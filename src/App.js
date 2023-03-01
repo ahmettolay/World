@@ -1,8 +1,19 @@
+import { useEffect, useContext } from 'react'
+import BlogCreate from './components/BlogCreate'
 
+import BlogContext from './context/blogs'
 
-function App() {
+const App = () => {
+  const { fetchBlogs } = useContext(BlogContext)
+  useEffect(() => {
+    fetchBlogs()
+  }, [])
+
   return (
-    <div>App</div>
+    <div className='app'>
+      <h1>Blog Listesi</h1>
+           <BlogCreate />
+    </div>
   )
 }
 export default App
