@@ -1,6 +1,6 @@
 import { useEffect, useContext } from 'react'
 import BlogCreate from './components/BlogCreate'
-
+import BlogList from "./components/BlogList"
 import BlogContext from './context/blogs'
 
 const App = () => {

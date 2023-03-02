@@ -4,6 +4,7 @@ import BlogContext from "../context/blogs";
 const BlogCreate = () => {
   const { createBlog } = useContext(BlogContext);
   const [title, setTitle] = useState("");
+  
   const handleChange = (event) => {
     setTitle(event.target.value);
   };
