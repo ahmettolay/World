@@ -13,6 +13,8 @@ const App = () => {
     <div className='app'>
       <h1>Blog Listesi</h1>
            <BlogCreate />
+           <BlogList />
+
     </div>
   )
 }
