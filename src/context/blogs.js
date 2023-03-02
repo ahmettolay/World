@@ -20,9 +20,10 @@ function Provider({ children }) {
     setBlogs(updatedBlogs);
   };
 
-  const editBlogById = async (id, newTitle) => {
+  const editBlogById = async (id, newTitle,newBody) => {
     const response = await axios.put(`http://localhost:3001/blogs/${id}`, {
       title: newTitle,
+      body : newBody,
     });
     console.log(response);
     const updatedBlogs = blogs.map((blog) => {
@@ -35,9 +36,10 @@ function Provider({ children }) {
     
   };
 console.log(blogs);
-  const createBlog = async (title) => {
+  const createBlog = async (title,body) => {
     const response = await axios.post("http://localhost:3001/blogs", {
       title,
+      body,
     });
 
     const updatedBlogs = [...blogs, response.data];

@@ -16,14 +16,22 @@ console.log(blog);
   const handleSubmit = () => {
     setShowEdit(false)
   }
-  let content = <h3>{blog.title}</h3>
+  let content = (<>
+  <h3>{blog.title}</h3>
+  <p>{blog.body}</p>
+  </> )
+  
   if (showEdit) {
     content = <BlogEdit onSubmit={handleSubmit} blog={blog} />
   }
+  const date = new Date();
+  const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
   return (
     <div className="blog-show">
       {content}
       <img src={`https://picsum.photos/seed/${blog.id}/300/200`} alt="blogs" />
+        <div>{formattedDate}</div>
+      
       <div className="actions">
         <button className="edit"  onClick={handleEditClick} >
           Edit
