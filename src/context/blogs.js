@@ -36,10 +36,11 @@ function Provider({ children }) {
     
   };
 console.log(blogs);
-  const createBlog = async (title,body) => {
+  const createBlog = async (title,body,date) => {
     const response = await axios.post("http://localhost:3001/blogs", {
       title,
       body,
+      blogCreateDate: date,
     });
 
     const updatedBlogs = [...blogs, response.data];
