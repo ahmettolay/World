@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import BlogContext from "../context/blogs"
+import BlogShow from "./BlogShow"
 
 
 const BlogList  = ()=> {
