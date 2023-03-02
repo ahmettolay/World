@@ -13,12 +13,25 @@ function Provider({ children }) {
   };
 
   const deleteBlogById = async (id) => {
-    await axios.delete(`http://localhost:3001/blogs/${id}`)
+    await axios.delete(`http://localhost:3001/blogs/${id}`);
     const updatedBlogs = blogs.filter((blog) => {
-      return blog.id !== id
-    })
-    setBlogs(updatedBlogs)
-  }
+      return blog.id !== id;
+    });
+    setBlogs(updatedBlogs);
+  };
+
+  const editBlogById = async (id, newTitle) => {
+    const response = await axios.put(`http://localhost:3001/blogs/${id}`, {
+      title: newTitle,
+    });
+    const updatedBlogs = blogs.map((blog) => {
+      if (blog.id === id) {
+        return { ...blog, ...response.data };
+      }
+      return blog;
+    });
+    setBlogs(updatedBlogs);
+  };
 
   const createBlog = async (title) => {
     const response = await axios.post("http://localhost:3001/blogs", {
@@ -33,6 +46,7 @@ function Provider({ children }) {
     createBlog,
     deleteBlogById,
     fetchBlogs,
+    editBlogById,
   };
   return (
     <BlogContext.Provider value={valueToShare}>{children}</BlogContext.Provider>

@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react'
 import BlogEdit from "./BlogList"
+import BlogContext from "../context/blogs"
 
 function BlogShow({blog}) {
   const { deleteBlogById } = useContext(BlogContext)
@@ -8,7 +9,9 @@ function BlogShow({blog}) {
   const handleDeleteClick = () => {
     deleteBlogById(blog.id)
   }
-
+  const handleEditClick = () => {
+    setShowEdit((p) => !p)
+  }
 
   const handleSubmit = () => {
     setShowEdit(false)
@@ -22,7 +25,7 @@ function BlogShow({blog}) {
       {content}
       <img src={`https://picsum.photos/seed/${blog.id}/300/200`} alt="blogs" />
       <div className="actions">
-        <button className="edit" >
+        <button className="edit"  onClick={handleEditClick} >
           Edit
         </button>
         <button className='delete' onClick={handleDeleteClick}>
