@@ -2,7 +2,12 @@ import { useState, useContext } from 'react'
 import BlogEdit from "./BlogList"
 
 function BlogShow({blog}) {
+  const { deleteBlogById } = useContext(BlogContext)
   const [showEdit, setShowEdit] = useState(false);
+
+  const handleDeleteClick = () => {
+    deleteBlogById(blog.id)
+  }
 
 
   const handleSubmit = () => {
@@ -20,7 +25,9 @@ function BlogShow({blog}) {
         <button className="edit" >
           Edit
         </button>
-        <button className="delete">Delete</button>
+        <button className='delete' onClick={handleDeleteClick}>
+          Delete
+        </button>
       </div>
     </div>
   );
