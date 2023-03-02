@@ -2,6 +2,9 @@ import { useEffect, useContext } from 'react'
 import BlogCreate from './components/BlogCreate'
 import BlogList from "./components/BlogList"
 import BlogContext from './context/blogs'
+import NavBar from './components/NavBar'
+
+
 
 const App = () => {
   const { fetchBlogs } = useContext(BlogContext)
@@ -11,9 +14,13 @@ const App = () => {
 
   return (
     <div className='app'>
+            <NavBar/>
       <h1>Blog Listesi</h1>
+            
+
            <BlogCreate />
            <BlogList />
+           
 
     </div>
   )
