@@ -6,7 +6,7 @@ function Provider({ children }) {
   const [blogs, setBlogs] = useState([]);
 
   const fetchBlogs = async () => {
-    const response = await axios.get("http://localhost:3001:/blogs");
+    const response = await axios.get("http://localhost:3001/blogs");
 
     setBlogs(response.data);
     console.log(blogs);
@@ -24,15 +24,17 @@ function Provider({ children }) {
     const response = await axios.put(`http://localhost:3001/blogs/${id}`, {
       title: newTitle,
     });
+    console.log(response);
     const updatedBlogs = blogs.map((blog) => {
       if (blog.id === id) {
-        return { ...blog, ...response.data };
+        return  {...blog, ...response.data} ;
       }
       return blog;
     });
     setBlogs(updatedBlogs);
+    
   };
-
+console.log(blogs);
   const createBlog = async (title) => {
     const response = await axios.post("http://localhost:3001/blogs", {
       title,

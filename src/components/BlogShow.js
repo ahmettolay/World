@@ -1,11 +1,11 @@
 import { useState, useContext } from 'react'
-import BlogEdit from "./BlogList"
+import BlogEdit from "./BlogEdit"
 import BlogContext from "../context/blogs"
 
 function BlogShow({blog}) {
   const { deleteBlogById } = useContext(BlogContext)
   const [showEdit, setShowEdit] = useState(false);
-
+console.log(blog);
   const handleDeleteClick = () => {
     deleteBlogById(blog.id)
   }
@@ -36,3 +36,5 @@ function BlogShow({blog}) {
   );
 }
 export default BlogShow;
+
+
