@@ -6,7 +6,7 @@ import BlogShow from "./BlogShow"
 const BlogList  = ()=> {
     const {blogs}=useContext(BlogContext)
     const renderedBlogs = blogs.map((blog)=>{
-        return <BlogShow key={blog.id} blog={blog} />
+        return <BlogShow  key={blog.id} blog={blog} />
     })
     return <div>{renderedBlogs}</div>
 }

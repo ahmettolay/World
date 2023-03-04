@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 const NavBar= ()=>{
   return (
     <nav className='navbar'>
-      <div className='navbar-container'>
+     
         {/* <Link to="/" className="nav-logo"> */}
-          WORLD
+         <p>WORLD</p> 
         {/* </Link> */}
         <ul className="nav-menu">
           <li className="nav-item">
@@ -27,7 +27,7 @@ const NavBar= ()=>{
             {/* </Link> */}
           </li>
         </ul>
-      </div>
+     
     </nav>
     
   );
