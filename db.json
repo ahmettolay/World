@@ -1,15 +1,10 @@
 {
   "blogs": [
     {
-      "title": "asdasd",
-      "body": "aaaaaaa",
-      "blogCreateDate": "3/3/2023",
-      "id": 1
-    },
-    {
       "title": "asd",
-      "body": "sss",
-      "id": 2
+      "body": "asd333",
+      "img": "https://fotolifeakademi.com/uploads/2020/04/manzara-fotografi-cekmek.jpg",
+      "id": 1
     }
   ]
 }
