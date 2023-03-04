@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { Provider } from './context/blogs'
 import './index.css'
+import "./blogShow.css"
 
 
 

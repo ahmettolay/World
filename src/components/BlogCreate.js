@@ -26,13 +26,22 @@ const BlogCreate = () => {
     <div className="blog-create">
       <h3>Blog Ekle</h3>
       <form onSubmit={handleSubmit}>
-        <label>Title: </label>
+        <div>
+          <label>Title: </label>
         <input className="input-title" value={title} onChange={e=> setTitle(e.target.value)} />
-        <label>Body: </label>
-        <input className="input-body" value={body}  onChange={e=> setBody(e.target.value)}/>
-        <label>Img: </label>
+        </div>
+        <div>
+          <label>Img: </label>
         <input className="input-body" value={img}  onChange={e=> setImg(e.target.value)}/>
-        <button className="button" onClick={()=>   setBlogCreateDate(formattedDate)}>Oluştur</button>
+        </div>
+        <div>
+          <label>Body: </label>
+        <input className="input-body" value={body}  onChange={e=> setBody(e.target.value)}/>
+        </div>
+        <div>
+          <button className="button" onClick={()=>   setBlogCreateDate(formattedDate)}>Oluştur</button>
+        </div>
+        
       </form>
     </div>
     
