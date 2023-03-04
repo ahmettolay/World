@@ -22,8 +22,6 @@ const BlogCreate = () => {
     const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
  
  
-  
-  
   return (
     <div className="blog-create">
       <h3>Blog Ekle</h3>
@@ -36,7 +34,6 @@ const BlogCreate = () => {
         <input className="input-body" value={img}  onChange={e=> setImg(e.target.value)}/>
         <button className="button" onClick={()=>   setBlogCreateDate(formattedDate)}>Oluştur</button>
       </form>
-       
     </div>
     
   );
