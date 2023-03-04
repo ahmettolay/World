@@ -19,6 +19,8 @@ console.log(blog);
   let content = (<>
   <h3>{blog.title}</h3>
   <p>{blog.body}</p>
+  <img src={blog.img} alt={blog.title} />
+  <p>{blog.blogCreateDate}</p>
   </> )
   
   if (showEdit) {
@@ -29,8 +31,6 @@ console.log(blog);
   return (
     <div className="blog-show">
       {content}
-      <img src={`https://picsum.photos/seed/${blog.id}/300/200`} alt="blogs" />
-      <p>{blog.blogCreateDate}</p>
       <div className="actions">
         <button className="edit"  onClick={handleEditClick} >
           Edit

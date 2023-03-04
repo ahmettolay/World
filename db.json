@@ -1,15 +1,10 @@
 {
   "blogs": [
     {
-      "title": "asdasd",
-      "body": "aaaaaaa",
-      "blogCreateDate": "3/3/2023",
+      "title": "Tatlı kedi",
+      "body": "Miyav miyav",
+      "img": "https://i.pinimg.com/236x/17/f8/1e/17f81ec7203b785f31414948a451e731.jpg",
       "id": 1
-    },
-    {
-      "title": "asd",
-      "body": "sss",
-      "id": 2
     }
   ]
 }

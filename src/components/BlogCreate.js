@@ -6,19 +6,15 @@ const BlogCreate = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [blogCreateDate, setBlogCreateDate] = useState("");
+  const [img,setImg]=useState()
   
-  const handleChangeTitle = (event) => {
-    setTitle(event.target.value);
-  };
-  const handleChangeBody = (event) => {
-    setBody(event.target.value);
-  };
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    createBlog(title,body,blogCreateDate);
+    createBlog(title,body,blogCreateDate,img);
     setTitle("");
     setBody("")
+    setImg("")
   };
 
  
@@ -26,19 +22,18 @@ const BlogCreate = () => {
     const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
  
  
-  
-  
   return (
     <div className="blog-create">
       <h3>Blog Ekle</h3>
       <form onSubmit={handleSubmit}>
         <label>Title: </label>
-        <input className="input-title" value={title} onChange={handleChangeTitle} />
+        <input className="input-title" value={title} onChange={e=> setTitle(e.target.value)} />
         <label>Body: </label>
-        <input className="input-body" value={body}  onChange={handleChangeBody}/>
+        <input className="input-body" value={body}  onChange={e=> setBody(e.target.value)}/>
+        <label>Img: </label>
+        <input className="input-body" value={img}  onChange={e=> setImg(e.target.value)}/>
         <button className="button" onClick={()=>   setBlogCreateDate(formattedDate)}>Oluştur</button>
       </form>
-       
     </div>
     
   );
