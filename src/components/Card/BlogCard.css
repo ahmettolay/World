@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
 
 .container{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  padding: 80px;
+  padding: 70px;
 }
 
 .square:hover {
@@ -63,10 +63,10 @@ p{
     border-radius: 3px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     margin-top: 20px;
     margin-left: 30px;
-    margin-right: 70px;
+    margin-right: 25px;
     font-size: 12px;
     cursor: pointer;
     font-family: 'merriweather'};

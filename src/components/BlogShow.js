@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react'
 import BlogEdit from "./BlogEdit"
 import BlogContext from "../context/blogs"
+import '../BlogCard.css'
 
 function BlogShow({blog}) {
   const { deleteBlogById } = useContext(BlogContext)
@@ -17,7 +18,8 @@ console.log(blog);
     setShowEdit(false)
   }
   let content = (<>
-  <h3>{blog.title}</h3>
+  
+  <div className='h1'>{blog.title}</div>
   <p>{blog.body}</p>
   </> )
   
@@ -27,19 +29,23 @@ console.log(blog);
   const date = new Date();
   const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
   return (
-    <div className="blog-show">
+    <div className='container'>
+    <div className="square">
+        <img src={`https://picsum.photos/seed/${blog.id}/300/200`} alt="blogs" className="mask" />
       {content}
-      <img src={`https://picsum.photos/seed/${blog.id}/300/200`} alt="blogs" />
+      
+    
         <div>{formattedDate}</div>
       
       <div className="actions">
-        <button className="edit"  onClick={handleEditClick} >
+        <button className="button"  onClick={handleEditClick} >
           Edit
         </button>
-        <button className='delete' onClick={handleDeleteClick}>
+        <button className='button' onClick={handleDeleteClick}>
           Delete
         </button>
       </div>
+    </div>
     </div>
   );
 }

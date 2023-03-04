@@ -2,8 +2,9 @@ import { useEffect, useContext } from 'react'
 import BlogCreate from './components/BlogCreate'
 import BlogList from "./components/BlogList"
 import BlogContext from './context/blogs'
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar/NavBar'
 import BlogCard from './components/Card/BlogCard'
+import Header from './components/Header/header'
 
 
 const App = () => {
@@ -14,13 +15,15 @@ const App = () => {
 
   return (
     <div className='app'>
+      <Header/>
+      
             <NavBar/>
       <h1>Blog Listesi</h1>
-      <div className='BlogCard'>
+      <div className='Blog'>
             <BlogCreate />
             <BlogList />
       </div>
-            <BlogCard/>
+            {/* <BlogCard/> */}
             
 
            
