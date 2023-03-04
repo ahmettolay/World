@@ -4,7 +4,7 @@ import './BlogCard.css'
 const BlogCard=()=>{
     return(
         <>
-  <title>Blog card</title>
+ 
   <div className="container">
     <div className="square">
       <img
