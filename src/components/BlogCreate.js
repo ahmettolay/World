@@ -15,6 +15,7 @@ const BlogCreate = () => {
     const newBody =body.trim()
     console.log(newBody);
     console.log(newTitle);
+    
     if(newTitle&&newBody){
     createBlog(newTitle,newBody,blogCreateDate,img);
     setTitle("");

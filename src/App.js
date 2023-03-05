@@ -3,7 +3,7 @@ import BlogCreate from './components/BlogCreate'
 import BlogList from "./components/BlogList"
 import BlogContext from './context/blogs'
 import NavBar from './components/NavBar'
-import BlogCard from './components/Card/BlogCard'
+
 
 
 const App = () => {
@@ -21,12 +21,6 @@ const App = () => {
             <BlogCreate />
             <BlogList />
       </div>
-            <BlogCard/>
-            
-
-           
-           
-
     </div>
   )
 }
