@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
 
 .container{
   display: flex;
@@ -69,4 +69,4 @@ p{
     margin-right: 70px;
     font-size: 12px;
     cursor: pointer;
-    font-family: 'merriweather'}; */
+    font-family: 'merriweather'};

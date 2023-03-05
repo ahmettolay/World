@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import BlogEdit from "./BlogEdit";
 import BlogContext from "../context/blogs";
 import '../index.css'
+import './Card/BlogCard.css'
 
 
 function BlogShow({ blog }) {
@@ -19,19 +20,20 @@ function BlogShow({ blog }) {
   };
   let content = (
    
-      
-        <div className="blogShow-container">
-          <img src={blog.img} alt={blog.title} />
-          <h3>{blog.title}</h3>
+    <div className="container">
+        <div className="square">
+          <img src={blog.img} alt={blog.title} className="mask"/>
+          <h1 className="h1">{blog.title}</h1>
           <p>{blog.body}</p>
           <p>{blog.blogCreateDate}</p>
-          <button className="btn"  onClick={handleEditClick}>
+          <button className="button"  onClick={handleEditClick}>
             <img src="" alt="" />
             Edit
           </button>
-          <button className="btn"  onClick={handleDeleteClick}>
+          <button className="button"  onClick={handleDeleteClick}>
             Delete
           </button>
+      </div>
       </div>
     
   
