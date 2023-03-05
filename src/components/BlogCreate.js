@@ -11,10 +11,16 @@ const BlogCreate = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    createBlog(title,body,blogCreateDate,img);
+    const newTitle =title.trim()
+    const newBody =body.trim()
+    console.log(newBody);
+    console.log(newTitle);
+    if(newTitle&&newBody){
+    createBlog(newTitle,newBody,blogCreateDate,img);
     setTitle("");
     setBody("")
     setImg("")
+    }
   };
 
  

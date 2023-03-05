@@ -7,7 +7,6 @@ import '../index.css'
 function BlogShow({ blog }) {
   const { deleteBlogById } = useContext(BlogContext);
   const [showEdit, setShowEdit] = useState(false);
-  console.log(blog);
   const handleDeleteClick = () => {
     deleteBlogById(blog.id);
   };
