@@ -1,36 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {  Link } from "react-router-dom";
 
 
-
-const NavBar= ()=>{
+const navbar= () =>{
   return (
-    <nav className='navbar'>
-     
-        {/* <Link to="/" className="nav-logo"> */}
-         <p>WORLD</p> 
-        {/* </Link> */}
-        <ul className="nav-menu">
-          <li className="nav-item">
-            {/* <Link to="/education" className="nav-links"> */}
-              Yurtdışı Eğitim
-            {/* </Link> */}
-          </li>
-          <li className="nav-item">
-            {/* <Link to="/work-and-travel" className="nav-links"> */}
-              Work &amp; Travel
-            {/* </Link> */}
-          </li>
-          <li className="nav-item">
-            {/* <Link to="/blog" className="nav-links"> */}
-              Blog
-            {/* </Link> */}
-          </li>
-        </ul>
-     
-    </nav>
-    
+  <div>
+    <li>
+      <a href='/components/Page/Blog'>Blog</a>
+      {/* <href"./components/Page/Blog">Dogs</href> */}
+    </li>
+    <li>
+    <a href='/components/Page/HomePage'>Ana Sayfa</a>
+    </li>
+    <li>
+    <a href='/components/Page/Info'>Hakkımızda</a>
+    </li>
+    <li>
+    <a href='/components/Page/Educations'>Yurt Dışı Eğitimler</a>
+    </li>
+  </div>
   );
 }
-
-export default NavBar;
+export default navbar;
