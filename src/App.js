@@ -17,6 +17,7 @@ const App = () => {
             <NavBar/>
       <h1>Blog Listesi</h1>
       <div className='BlogCard'>
+      
             <BlogCreate />
             <BlogList />
       </div>
