@@ -13,7 +13,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className='app'>
+    <div  className='app'>
             <NavBar/>
       <h1>Blog Listesi</h1>
       <div className='BlogCard'>

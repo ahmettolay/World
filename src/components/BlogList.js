@@ -14,7 +14,7 @@ const BlogList = () => {
   const filteredBlogs = blogs.filter((blog) =>
     blog.title.toLowerCase().includes(searchBlog.toLowerCase().trim())
   );
-  const renderedBlogs = filterBlogs.map((blog) => {
+  const  renderedBlogs = filterBlogs.map((blog) => {
     return <BlogShow key={blog.id} blog={blog} />;
   });
   return (
@@ -26,7 +26,7 @@ const BlogList = () => {
 
       {renderedBlogs}
     </div>
-  );
+   );
 };
 
 export default BlogList;

@@ -14,7 +14,7 @@
     background-color: #333;
     color: #fff;
     height: 80px;
-    padding: 0 50px;
+    padding:  0 50px;
   }
 
   .nav-menu{
@@ -23,6 +23,7 @@
    
   }
   
+
   .search-input{
     height: 20em; 
     min-height: 3em; 
@@ -35,3 +36,4 @@
     border-radius: 4px; 
     box-sizing: border-box; 
   }
+

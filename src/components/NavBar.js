@@ -11,7 +11,7 @@ const NavBar= ()=>{
          <p>WORLD</p> 
         {/* </Link> */}
         <ul className="nav-menu">
-          <li className="nav-item">
+          <li  className="nav-item">
             {/* <Link to="/education" className="nav-links"> */}
               Yurtdışı Eğitim
             {/* </Link> */}
