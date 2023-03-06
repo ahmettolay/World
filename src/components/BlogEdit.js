@@ -42,7 +42,7 @@ function BlogEdit({ blog, onSubmit }) {
       </div>
 
 
-      <button className="button is-primary">Save</button>
+       <button className="button is-primary">Save</button>
     </form>
   );
 }
