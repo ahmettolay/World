@@ -23,4 +23,17 @@
    
   }
   
-  
+
+  .search-input{
+    height: 20em; 
+    min-height: 3em; 
+    resize: vertical;
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px;
+    line-height: 1.5; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+  }
+
