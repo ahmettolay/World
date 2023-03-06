@@ -14,19 +14,19 @@ const BlogList = () => {
   const filteredBlogs = blogs.filter((blog) =>
     blog.title.toLowerCase().includes(searchBlog.toLowerCase().trim())
   );
-  const renderedBlogs = filterBlogs.map((blog) => {
+  const  renderedBlogs = filterBlogs.map((blog) => {
     return <BlogShow key={blog.id} blog={blog} />;
   });
   return (
     <div>
       <div className="search-bar">
-        <label>Search:</label>
-        <input type="text" onChange={(e) => setSearchBlog(e.target.value)}  placeholder="Blog Ara..."/>
+        
+        <input className="search-input" type="text" onChange={(e) => setSearchBlog(e.target.value)}  placeholder="Blog Ara..."/>
       </div>
 
       {renderedBlogs}
     </div>
-  );
+   );
 };
 
 export default BlogList;

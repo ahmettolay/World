@@ -11,10 +11,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: #333;
     color: #fff;
     height: 80px;
-    padding: 0 50px;
+    padding:  0 50px;
   }
 
   .nav-menu{
@@ -22,8 +22,18 @@
     gap :30px
    
   }
-  .blog{
-    color: red;
+  
+
+  .search-input{
+    height: 20em; 
+    min-height: 3em; 
+    resize: vertical;
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px;
+    line-height: 1.5; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
   }
-  
-  
+
