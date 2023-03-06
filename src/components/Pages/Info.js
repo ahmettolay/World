@@ -44,3 +44,5 @@
     edilmesini sağlamaktadır.
   </p>
 </>
+
+export default info;

@@ -17,7 +17,7 @@ const navbar= () =>{
     </li>
     
     <li className='nav-item'>
-    <a href='/components/Page/Info'>Hakkımızda</a>
+    <a href='/components/Pages/Info'>Hakkımızda</a>
     </li>
     
     </ul>

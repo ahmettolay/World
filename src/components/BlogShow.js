@@ -60,7 +60,21 @@ function BlogShow({ blog }) {
     content = <BlogEdit onSubmit={handleSubmit} blog={blog} />;
   }
 
-  return <div className="deneme">{content}</div>;
+  return (
+    <div>
+      {content}
+      {!showEdit && (
+        <div className="button-container">
+          <button className="button" onClick={handleEditClick}>
+            Edit
+          </button>
+          <button className="button delete-btn" onClick={handleDeleteClick}>
+            Delete
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default BlogShow;
