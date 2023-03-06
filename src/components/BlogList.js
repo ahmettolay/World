@@ -21,7 +21,7 @@ const BlogList = () => {
     <div>
       <div className="search-bar">
         <label>Search:</label>
-        <input type="text" onChange={(e) => setSearchBlog(e.target.value)}  placeholder="Blog Ara..."/>
+        <input className="search-input" type="text" onChange={(e) => setSearchBlog(e.target.value)}  placeholder="Blog Ara..."/>
       </div>
 
       {renderedBlogs}
