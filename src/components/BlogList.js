@@ -26,7 +26,7 @@ const BlogList = () => {
 
       {renderedBlogs}
     </div>
-  );
+   );
 };
 
 export default BlogList;

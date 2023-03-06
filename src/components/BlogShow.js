@@ -8,13 +8,13 @@ function BlogShow({ blog }) {
   const [showEdit, setShowEdit] = useState(false);
 
   const handleDeleteClick = () => {
-    deleteBlogById(blog.id);
+    deleteBlogById(blog.id);npm
   };
   const handleEditClick = () => {
     setShowEdit((p) => !p);
   };
 
-  const handleSubmit = () => {
+  const  handleSubmit = () => {
     setShowEdit(false);
   };
   let content = (
