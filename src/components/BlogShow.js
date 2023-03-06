@@ -14,7 +14,7 @@ function BlogShow({ blog }) {
     setShowEdit((p) => !p);
   };
 
-  const handleSubmit = () => {
+  const  handleSubmit = () => {
     setShowEdit(false);
   };
   let content = (
