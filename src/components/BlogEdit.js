@@ -14,7 +14,7 @@ function BlogEdit({ blog, onSubmit }) {
   };
 
   return (
-    <form className="blog-edit" onSubmit={handleSubmit}>
+    <form  className="blog-edit" onSubmit={handleSubmit}>
       <div>
         <label>Title:</label>
         <input

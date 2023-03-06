@@ -46,7 +46,7 @@ const BlogCreate = () => {
         <input className="input-body" value={body}  onChange={e=> setBody(e.target.value)}/>
         </div>
         <div>
-          <button className="button" onClick={()=>   setBlogCreateDate(formattedDate)}>Oluştur</button>
+          <button    className="button" onClick={()=>   setBlogCreateDate(formattedDate)}>Oluştur</button>
 
         </div>
         

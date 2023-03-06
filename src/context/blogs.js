@@ -12,7 +12,7 @@ function Provider({ children }) {
     console.log(blogs);
   };
 
-  const deleteBlogById = async (id) => {
+  const  deleteBlogById = async (id) => {
     await axios.delete(`http://localhost:3001/blogs/${id}`);
     const updatedBlogs = blogs.filter((blog) => {
       return blog.id !== id;
