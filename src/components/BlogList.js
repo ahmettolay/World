@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import BlogContext from "../context/blogs";
 import BlogShow from "./BlogShow";
+import "../blogList.css"
 
 const BlogList = () => {
   const { blogs } = useContext(BlogContext);
@@ -18,14 +19,16 @@ const BlogList = () => {
     return <BlogShow key={blog.id} blog={blog} />;
   });
   return (
-    <div>
-      <div className="search-bar">
-        <label>Search:</label>
-        <input type="text" onChange={(e) => setSearchBlog(e.target.value)}  placeholder="Blog Ara..."/>
+    <>
+    <div className="flexbox">
+      <div className="search" >
+        <div>
+       <input  type="text" onChange={(e) => setSearchBlog(e.target.value)}  placeholder="Blog Ara..." required/>
+        </div>
       </div>
-
-      {renderedBlogs}
     </div>
+    {renderedBlogs}
+    </>
    );
 };
 
