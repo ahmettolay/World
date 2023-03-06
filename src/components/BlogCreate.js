@@ -15,6 +15,7 @@ const BlogCreate = () => {
     const newBody =body.trim()
     console.log(newBody);
     console.log(newTitle);
+    
     if(newTitle&&newBody){
     createBlog(newTitle,newBody,blogCreateDate,img);
     setTitle("");
@@ -33,7 +34,7 @@ const BlogCreate = () => {
       <h3>Blog Ekle</h3>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Title: </label>
+          <label>Title </label>
         <input className="input-title" value={title} onChange={e=> setTitle(e.target.value)} />
         </div>
         <div>
@@ -46,6 +47,7 @@ const BlogCreate = () => {
         </div>
         <div>
           <button className="button" onClick={()=>   setBlogCreateDate(formattedDate)}>Oluştur</button>
+
         </div>
         
       </form>
