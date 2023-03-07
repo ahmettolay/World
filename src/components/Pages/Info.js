@@ -1,4 +1,11 @@
-<>
+const Info = () => {
+  return (
+    <div>Info</div>
+  )
+}
+export default Info
+
+{/* <>
   <p>
     <strong>World Yurtdışı Eğitim&nbsp;</strong>2005 yılından bu yana eğitim
     alanında hizmet veren bir şirket olan Siteb Eğitim Ltd. Şti. tarafından
@@ -45,4 +52,4 @@
   </p>
 </>
 
-export default info;
+export default info; */}

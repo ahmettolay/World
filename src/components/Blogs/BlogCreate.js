@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import BlogContext from "../context/blogs";
+import BlogContext from "../../context/blogs";
 
 const BlogCreate = () => {
   const { createBlog } = useContext(BlogContext);
