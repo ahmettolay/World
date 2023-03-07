@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import BlogContext from "../context/blogs";
+import BlogContext from "../../context/blogs";
 
 function BlogEdit({ blog, onSubmit }) {
   const { editBlogById } = useContext(BlogContext);

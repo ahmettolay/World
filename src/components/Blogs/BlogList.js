@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
-import BlogContext from "../context/blogs";
+import BlogContext from "../../context/blogs";
 import BlogShow from "./BlogShow";
-import "../blogList.css"
+import "../Blogs/blogList.css"
 
 const BlogList = () => {
   const { blogs } = useContext(BlogContext);
