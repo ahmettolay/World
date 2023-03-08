@@ -9,6 +9,7 @@
 }
 
 .navbar {
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,5 +39,17 @@
   .blog{
     color: #F5EAEA
   }
+
+  .homepage{
+    display:flex;
+    background-color: #6689A1;
+    align-items: center;
+    height: 85%;
+    text-align: justify;
+    flex-direction: column;
+    padding: 0 20px;
+
+  }
+ 
  
 
