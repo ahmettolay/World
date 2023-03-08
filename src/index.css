@@ -5,13 +5,16 @@
   text-decoration: none;
   text-align: center;
   list-style: none;
+  
+  
 }
 
 .navbar {
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ca1c1c;
+    background-color: #4C956C;
     color: #fff;
     height: 80px;
     padding:  0 50px;
@@ -37,5 +40,17 @@
   .blog{
     color: #fff
   }
+
+  .homepage{
+    display:flex;
+    background-color: #6689A1;
+    align-items: center;
+    height: 85%;
+    text-align: justify;
+    flex-direction: column;
+    padding: 0 20px;
+
+  }
+ 
  
 

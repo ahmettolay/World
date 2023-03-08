@@ -9,6 +9,7 @@ import Info from './components/Pages/Info'
 import Educations from './components/Pages/Educations'
 import Blog from './components/Pages/Blog'
 import Layout from './components/Layout/Layout'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
               </Route>
             </Routes>
             </BrowserRouter>
+            <Footer/>
            
       
        <div className='BlogCard'>
