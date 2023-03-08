@@ -1,5 +1,6 @@
 import React from "react"
 import { Outlet } from "react-router-dom"
+import Footer from "../Footer/Footer";
 import Navbar from "../Headers/NavBar"
 
 const Layout = () => {
@@ -7,6 +8,10 @@ const Layout = () => {
     <>
     <Navbar/>
     <Outlet/>
+    <div className="content-wrap">
+    
+    </div>
+    
     </>
     
   );

@@ -5,6 +5,7 @@ import { Provider } from './context/blogs'
 import './index.css'
 import "./components/Blogs/blogShow.css"
 import "./components/Blogs/blogCreate.css"
+import "../src/components/Footer/footer.css"
 
 
 
