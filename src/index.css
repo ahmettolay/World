@@ -11,15 +11,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #ca1c1c;
     color: #fff;
     height: 80px;
     padding:  0 50px;
   }
+  
 
   .nav-menu{
     display: flex;
-    gap :30px
+    gap :30px;
+    color: #fff;
+    
    
   }
   .anaSayfa{

@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import BlogEdit from "./BlogEdit";
-import BlogContext from "../context/blogs";
-import "../index.css";
+import BlogContext from "../../context/blogs";
+import "../Blogs/blogShow.css";
 
 function BlogShow({ blog }) {
   const { deleteBlogById } = useContext(BlogContext);
