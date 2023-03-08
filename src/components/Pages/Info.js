@@ -1,12 +1,6 @@
 const Info = () => {
   return (
-    <div>Info</div>
-  )
-}
-export default Info
-
-{/* <>
-  <p>
+    <div><p>
     <strong>World Yurtdışı Eğitim&nbsp;</strong>2005 yılından bu yana eğitim
     alanında hizmet veren bir şirket olan Siteb Eğitim Ltd. Şti. tarafından
     kurulmuştur. Siteb Eğitim Şirketi Ankara’da faaliyet göstermekte olup
@@ -49,7 +43,13 @@ export default Info
     destekte bulunmaktadır. Ayrıca genç öğrencilerimizden oluşan gruplarda
     başlarında bir temsilcimizi de göndererek gerekli durumlara anında müdahale
     edilmesini sağlamaktadır.
-  </p>
+  </p></div>
+  )
+}
+export default Info
+
+{/* <>
+  
 </>
 
 export default info; */}

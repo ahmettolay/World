@@ -5,14 +5,15 @@
   text-decoration: none;
   text-align: center;
   list-style: none;
+  /* background-color: #FFB84C; */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ca1c1c;
-    color: #fff;
+    background-color: #A459D1;
+    color: #F5EAEA;
     height: 80px;
     padding:  0 50px;
   }
@@ -21,21 +22,21 @@
   .nav-menu{
     display: flex;
     gap :30px;
-    color: #fff;
+    color: #F5EAEA;
     
    
   }
   .anaSayfa{
-    color: #fff;
+    color: #F5EAEA;
   }
   .info{
-    color: #fff;
+    color: #F5EAEA;
   }
   .egitim{
-    color: #fff;
+    color: #F5EAEA;
   }
   .blog{
-    color: #fff
+    color: #F5EAEA
   }
  
 
