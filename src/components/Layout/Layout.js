@@ -8,12 +8,8 @@ const Layout = () => {
     <>
     <Navbar/>
     <Outlet/>
-    <div className="content-wrap">
-    
-    </div>
-    
+   <Footer />
     </>
-    
   );
 };
 export default Layout;
