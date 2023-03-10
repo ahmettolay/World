@@ -101,10 +101,46 @@ h1 {
   background: #943143;
 }
 
+.bs-read-more {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.bs-read-more a {
+  color: #ffff;
+}
+
 .bs-card-text {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-left: 12px;
+}
+
+.bs-edit-btn {
+  background-color: #f0ad4e;
+}
+.bs-edit-btn a {
+  color: #ffff;
+}
+.bs-edit-btn:hover {
+  background-color: #ec971f;
+}
+
+.bs-delete-btn {
+  background-color: #d9534f;
+  color: #ffff;
+}
+.bs-delete-btn:hover {
+  background-color: #c9302c;
 }

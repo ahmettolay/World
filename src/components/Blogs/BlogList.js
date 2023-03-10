@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import BlogContext from "../../context/blogs";
 import BlogShow from "./BlogShow";
-import "../Blogs/blogList.css"
+import "../Blogs/blogList.css";
 
 const BlogList = () => {
   const { blogs } = useContext(BlogContext);
@@ -12,24 +12,20 @@ const BlogList = () => {
     setFilterBlogs(filteredBlogs);
   }, [blogs, searchBlog]);
 
-  const filteredBlogs = blogs.filter((blog) =>
-    blog.title.toLowerCase().includes(searchBlog.toLowerCase().trim())
-  );
-  const  renderedBlogs = filterBlogs.map((blog) => {
-    return <BlogShow key={blog.id} blog={blog} />;
-  });
+  const filteredBlogs = blogs.filter((blog) => blog.title.toLowerCase().includes(searchBlog.toLowerCase().trim()));
+
   return (
     <>
-    <div className="flexbox">
-      <div className="search" >
-        <div>
-       <input  type="text" onChange={(e) => setSearchBlog(e.target.value)}  placeholder="Blog Ara..." required/>
+      <div className="flexbox">
+        <div className="search">
+          <div>
+            <input type="text" onChange={(e) => setSearchBlog(e.target.value)} placeholder="Blog Ara..." required />
+          </div>
         </div>
       </div>
-    </div>
-    {renderedBlogs}
+      {filterBlogs && filterBlogs.map((blog) => <BlogShow key={blog.id} blog={blog} />)}
     </>
-   );
+  );
 };
 
 export default BlogList;
