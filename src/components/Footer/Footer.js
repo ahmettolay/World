@@ -16,10 +16,14 @@ const Footer = () => {
           <div className="co1">
             <h4>2023 World Yurtdışı Eğitim</h4>
             <ul className="list-unstyled">
+
+              <li>Ankara,Çankaya</li>
+              <li>Cumhuriyet mahallesi Başarı Sokak No:58</li>
+
               <li>Ankara,Çankaya Cumhuriyet mahallesi Başarı Sokak No:58</li>
+
             </ul>
           </div>
-          <div className="co2">
             <ul className="list-unstyled">
               <li>
                 © 2023 World Yurtdışı Eğitim sitesinin tüm hakları saklı olup,
@@ -29,6 +33,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+      main
       </div>
       <div className="contant-icon">
         <li>
