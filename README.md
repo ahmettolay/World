@@ -51,10 +51,6 @@ Web Sayfasinda giden ogrencilerin deneyimlerini paylasabilmesi icin blog olustur
 
 
   
-## İlişkili Projeler
 
-İşte bazı ilgili projeler
-
-[Awesome README](https://github.com/matiassingers/awesome-readme)
 
   
