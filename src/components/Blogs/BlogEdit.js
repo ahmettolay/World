@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BlogContext from "../../context/blogs";
-
 function BlogEdit({ blog, onSubmit }) {
   const { editBlogById } = useContext(BlogContext);
   const [title, setTitle] = useState(blog.title);
@@ -11,9 +10,8 @@ function BlogEdit({ blog, onSubmit }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     editBlogById(blog.id, title, body, img);
-    navigete("/components/Page/Blog")
+    navigete("/Blog");
   };
-
   return (
     <form className="blog-edit" onSubmit={handleSubmit}>
       <div className="blog-edit-square">
@@ -24,7 +22,6 @@ function BlogEdit({ blog, onSubmit }) {
           onChange={(e) => setTitle(e.target.value)}
         />
       </div>
-
       <div>
         <label>Img:</label>
         <input
@@ -41,12 +38,10 @@ function BlogEdit({ blog, onSubmit }) {
           onChange={(e) => setBody(e.target.value)}
         />
       </div>
-
       <button className="button is-primary" onClick={handleSubmit}>
-       Save
-        </button>
+        Save
+      </button>
     </form>
   );
 }
-
 export default BlogEdit;

@@ -1,17 +1,13 @@
 import { createContext, useState } from "react";
 import axios from "axios";
 const BlogContext = createContext();
-
 function Provider({ children }) {
   const [blogs, setBlogs] = useState([]);
-
   const fetchBlogs = async () => {
     const response = await axios.get("http://localhost:3001/blogs");
-
     setBlogs(response.data);
     console.log(blogs);
   };
-
   const deleteBlogById = async (id) => {
     await axios.delete(`http://localhost:3001/blogs/${id}`);
     const updatedBlogs = blogs.filter((blog) => {
@@ -19,7 +15,6 @@ function Provider({ children }) {
     });
     setBlogs(updatedBlogs);
   };
-
   const editBlogById = async (id, newTitle, newBody, img) => {
     const response = await axios.put(`http://localhost:3001/blogs/${id}`, {
       title: newTitle,
@@ -43,7 +38,6 @@ function Provider({ children }) {
       blogCreateDate: date,
       img,
     });
-
     const updatedBlogs = [...blogs, response.data];
     setBlogs(updatedBlogs);
   };
@@ -54,7 +48,9 @@ function Provider({ children }) {
     fetchBlogs,
     editBlogById,
   };
-  return <BlogContext.Provider value={valueToShare}>{children}</BlogContext.Provider>;
+  return (
+    <BlogContext.Provider value={valueToShare}>{children}</BlogContext.Provider>
+  );
 }
 export { Provider };
 export default BlogContext;
