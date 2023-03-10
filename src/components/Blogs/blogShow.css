@@ -6,7 +6,6 @@
   text-decoration: none;
   text-align: center;
 }
-
 body {
   background: #ececec;
 }
@@ -21,9 +20,6 @@ h1 {
 }
 .bs-blog-wrapper {
   padding: 15px;
-  /* flex-direction: row; */
-  /* justify-content: center; */
-  /* flex-wrap: wrap; */
 }
 .bs-blog-wrapper .bs-blog-card {
   max-width: 300px;
@@ -100,16 +96,13 @@ h1 {
 .bs-blog-wrapper .bs-blog-card .bs-read-more:hover {
   background: #943143;
 }
-
 .bs-read-more {
   border-radius: 20px;
   border: 1px solid black;
 }
-
 .bs-read-more a {
   color: #ffff;
 }
-
 .bs-card-text {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -117,7 +110,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .btn {
   border: none;
   cursor: pointer;
@@ -126,7 +118,6 @@ h1 {
   padding: 10px;
   margin-left: 12px;
 }
-
 .bs-edit-btn {
   background-color: #f0ad4e;
 }
@@ -136,7 +127,6 @@ h1 {
 .bs-edit-btn:hover {
   background-color: #ec971f;
 }
-
 .bs-delete-btn {
   background-color: #d9534f;
   color: #ffff;

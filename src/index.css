@@ -5,11 +5,8 @@
   text-decoration: none;
   text-align: center;
   list-style: none;
-  /* background-color: #FFB84C; */
 }
-
 .navbar {
-  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +14,6 @@
     color: #F5EAEA;
     height: 80px;
     padding:  0 50px;
-    
   }
   .img-logo {
     width: 5rem;
@@ -27,10 +23,6 @@
     transform: scale(1.2);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   }
-  
-  
-  
-
   .nav-menu{
     display: flex;
     gap :30px;
@@ -39,11 +31,9 @@
   .nav-menu li a {
     color: #F5EAEA;
   }
-  
   .item.active a {
     color: #FFB84C;
   }
-  
   .anaSayfa{
     color: #F5EAEA;
   }
@@ -56,7 +46,6 @@
   .blog{
     color: #F5EAEA
   }
-
   .homepage{
     display:flex;
     background-color: #F5EAEA;
@@ -65,7 +54,6 @@
     text-align: justify;
     flex-direction: column;
     padding: 0 20px;
-
   }
  
  
