@@ -13,7 +13,6 @@ const Footer = () => {
           <div className="co1">
             <h4>2023 World Yurtdışı Eğitim</h4>
             <ul className="list-unstyled">
-              <li>0232 437 5899</li>
               <li>Ankara,Çankaya</li>
               <li>Cumhuriyet mahallesi Başarı Sokak No:58</li>
             </ul>
@@ -21,7 +20,7 @@ const Footer = () => {
 
           {/* column3 */}
           <div className="co2">
-            <h4>Well Another Column</h4>
+            
             <ul className="list-unstyled">
               <li>
                 © 2023 World Yurtdışı Eğitim sitesinin tüm hakları saklı olup, içerik ve görselleri izinsiz yayınlanamaz
@@ -31,11 +30,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="row">
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} World Yurtdışı Eğitim | All Right Reserved | Terms Of Service | Privacy
-          </p>
-        </div>
+        
       </div>
       <div className="contant-icon">
         <li>
