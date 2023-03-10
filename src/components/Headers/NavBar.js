@@ -15,7 +15,7 @@ const CustomLink = ({ to, pageName }) => {
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/components/Page/HomePage">
+      <Link to="/" pageName="Homepage">
         <img src="https://i.ibb.co/6r1chNT/world.png" alt="world" className="img-logo" />
       </Link>
 
