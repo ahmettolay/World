@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@500&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,11 +7,9 @@
   list-style: none;
   font-family: "Montserrat", sans-serif;
 }
-
 body {
   height: 100vh;
 }
-
 main {
   display: flex;
   background-color: #f5eaea;
@@ -22,35 +19,29 @@ main {
   flex-direction: column;
   padding: 0 20px;
 }
-
 section {
   display: flex;
   align-items: center;
   gap: 30px;
   padding: 3%;
 }
-
 section > p {
   color: #ffb84c;
   line-height: 1.6;
   justify-content: center;
 }
-
 .hmain {
   line-height: 3;
   color: #f16767;
   margin-top: 5rem;
 }
-
 img {
   height: 25rem;
   border-radius: 10%;
 }
-
 figcaption {
   display: none;
 }
-
 @media (max-width: 767px) {
   section {
     justify-content: center;

@@ -1,16 +1,12 @@
-import { useState, useContext } from "react";
-import BlogEdit from "./BlogEdit";
+import { useContext } from "react";
 import BlogContext from "../../context/blogs";
 import "../Blogs/blogShow.css";
-import { BrowserRouter, Link, Routes, Route, useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 function BlogShow({ blog }) {
   const { deleteBlogById } = useContext(BlogContext);
-
   const handleDeleteClick = () => {
     deleteBlogById(blog.id);
   };
-
   let content = (
     <div>
       <div className="bs-blog-wrapper">

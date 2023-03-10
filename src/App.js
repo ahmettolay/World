@@ -1,25 +1,19 @@
 import { useEffect, useContext } from "react";
-import BlogCreate from "./components/Blogs/BlogCreate";
-import BlogList from "./components/Blogs/BlogList";
 import BlogContext from "./context/blogs";
-import NavBar from "./components/Headers/NavBar";
 import HomePage from "./components/Pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Info from "./components/Pages/Info";
 import Educations from "./components/Pages/Educations";
 import Blog from "./components/Pages/Blog";
 import Layout from "./components/Layout/Layout";
-import Footer from "./components/Footer/Footer";
 import BlogEdit from "./components/Blogs/BlogEdit";
 import BlogRead from "./components/Blogs/BlogRead";
 import NotFound from "./components/Pages/NotFound";
-
 const App = () => {
   const { fetchBlogs, blogs } = useContext(BlogContext);
   useEffect(() => {
     fetchBlogs();
   }, []);
-
   return (
     <div className="app">
       <BrowserRouter>

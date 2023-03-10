@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import "../Pages/educations.css";
-
 const Educations = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isExpanded1, setIsExpanded1] = useState(false);
-
   const handleButton = () => {
     setIsExpanded(!isExpanded);
   };
-
   const handleButton2 = () => {
     setIsExpanded1(!isExpanded1);
   };
-
   return (
     <div>
       <h1>Educations</h1>
@@ -67,7 +63,6 @@ const Educations = () => {
                   ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum. Aenean at lacus at turpis rutrum elementum. Nullam vel mauris quis magna fringilla gravida eu vel risus. Fusce in felis et magna pharetra euismod sed id quam. Nam vulputate placerat tortor. In suscipit tincidunt justo, in gravida risus elementum non. Vestibulum non enim vel magna faucibus ornare quis nec dui. Donec quis lorem at erat pellentesque porta sit amet et ipsum."
                   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum."}
               </p>
-
               <button className="read-more" onClick={handleButton2}>
                 Show {isExpanded1 ? "Less" : "More"}
               </button>
@@ -78,5 +73,4 @@ const Educations = () => {
     </div>
   );
 };
-
 export default Educations;
