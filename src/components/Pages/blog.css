@@ -1,0 +1,14 @@
+.blog-olustur {
+  background-color: #0275d8;
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 19px;
+}
+
+.blog-olustur:hover {
+  background-color: #004085;
+}

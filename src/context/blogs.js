@@ -12,7 +12,7 @@ function Provider({ children }) {
     console.log(blogs);
   };
 
-  const  deleteBlogById = async (id) => {
+  const deleteBlogById = async (id) => {
     await axios.delete(`http://localhost:3001/blogs/${id}`);
     const updatedBlogs = blogs.filter((blog) => {
       return blog.id !== id;
@@ -20,29 +20,28 @@ function Provider({ children }) {
     setBlogs(updatedBlogs);
   };
 
-  const editBlogById = async (id, newTitle,newBody,img) => {
+  const editBlogById = async (id, newTitle, newBody, img) => {
     const response = await axios.put(`http://localhost:3001/blogs/${id}`, {
       title: newTitle,
-      body : newBody,
-      img :img
+      body: newBody,
+      img: img,
     });
     console.log(response);
     const updatedBlogs = blogs.map((blog) => {
       if (blog.id === id) {
-        return  {...blog, ...response.data} ;
+        return { ...blog, ...response.data };
       }
       return blog;
     });
     setBlogs(updatedBlogs);
-    
   };
-console.log(blogs);
-  const createBlog = async (title,body,date,img) => {
+  console.log(blogs);
+  const createBlog = async (title, body, date, img) => {
     const response = await axios.post("http://localhost:3001/blogs", {
       title,
       body,
       blogCreateDate: date,
-      img
+      img,
     });
 
     const updatedBlogs = [...blogs, response.data];
@@ -55,9 +54,7 @@ console.log(blogs);
     fetchBlogs,
     editBlogById,
   };
-  return (
-    <BlogContext.Provider value={valueToShare}>{children}</BlogContext.Provider>
-  );
+  return <BlogContext.Provider value={valueToShare}>{children}</BlogContext.Provider>;
 }
 export { Provider };
 export default BlogContext;

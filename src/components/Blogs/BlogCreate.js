@@ -1,12 +1,12 @@
 import { useState, useContext } from "react";
 import BlogContext from "../../context/blogs";
 
-const BlogCreate = () => {
+const BlogCreate = ({ onCancel }) => {
   const { createBlog } = useContext(BlogContext);
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [blogCreateDate, setBlogCreateDate] = useState("");
-  const [img, setImg] = useState();
+  const [img, setImg] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -20,13 +20,16 @@ const BlogCreate = () => {
       setTitle("");
       setBody("");
       setImg("");
+      onCancel(); // İşlem tamamlandıktan sonra onCancel fonksiyonunu çağırarak BlogCreate componentini kapat
     }
   };
 
+  const handleCancel = () => {
+    onCancel(); // "Cancel" butonuna tıklandığında onCancel fonksiyonunu çağırarak BlogCreate componentini kapat
+  };
+
   const date = new Date();
-  const formattedDate = `${date.getDate()}/${
-    date.getMonth() + 1
-  }/${date.getFullYear()}`;
+  const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 
   return (
     <div className="blog-create">
@@ -39,32 +42,38 @@ const BlogCreate = () => {
             <label>Title </label>
             <input
               className="input-title"
+              type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
+              required
+              placeholder="Blog başlığını giriniz"
             />
           </div>
           <div>
             <label>Img: </label>
             <input
               className="input-img"
+              type="url"
               value={img}
               onChange={(e) => setImg(e.target.value)}
+              required
+              placeholder="blog için görsel ekleyiniz"
             />
           </div>
           <div>
-            <label>Body: </label>
-            <textarea
-              className="input-body"
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
-            />
+            <label>Blog Yazısı </label>
+            <textarea className="input-body" value={body} onChange={(e) => setBody(e.target.value)} required />
           </div>
           <div>
+            <button className="button" onClick={() => setBlogCreateDate(formattedDate)}>
+              Oluştur
+            </button>
             <button
               className="button"
-              onClick={() => setBlogCreateDate(formattedDate)}
+              type="button"
+              onClick={handleCancel} // "Cancel" butonuna tıklandığında handleCancel fonksiyonunu çağırarak BlogCreate componentini kapat
             >
-              Oluştur
+              İptal
             </button>
           </div>
         </form>
